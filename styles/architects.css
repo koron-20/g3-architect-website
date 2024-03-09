@@ -16,12 +16,16 @@
 
 }
 .btn-primary:hover{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .banner img{
   margin-top: 20px;
   width: 100%;
+}
+.grey-font{
+  color: #727272;
+  font-size: 1.25rem;
 }
 
 /*Header styles*/
@@ -57,7 +61,7 @@ nav li a{
   color: #424242 ;
 }
 nav li:hover{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 /*Banner styles */
@@ -67,36 +71,19 @@ nav li:hover{
   margin: 0 auto;
 
 }
-.banner-title{
+.section-title{
   font-size: 4rem;
   font-weight: 700;
   color: #131313;
 }
 .banner-desc{
-  color: #727272;
-}
-/*responsive media queries */
-/*Mobile device */
-@media screen and (max-width: 576px){
-  header{
-    padding: 20px;
-  }
-  nav{
-    flex-direction: column;
-
-  }
   
-}
-/* Tablets */
-@media screen and (min-width: 576px) and (max-width:960px){
-  header{
-    padding: 50px;
-  }
 }
 /*main section */
 main{
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 70px auto;
+
 
 }
 .team-container{
@@ -120,4 +107,54 @@ main{
 .feature{
   color: orange;
   font-weight:800 ;
+}
+/*Facts section */
+.facts-card-containers{
+  display: flex;
+  justify-content: space-around;
+}
+.facts-card-containers .card{
+  border-radius: 8px;
+  border: 1px solid orange;
+  text-align: center;
+  padding: 30px;
+}
+.facts-card-containers .card-num{
+  font-size: 2.8rem;
+  color: #424242;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.facts-card-containers .card-title{
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/*responsive media queries */
+/*Mobile device */
+@media screen and (max-width: 576px){
+  header{
+    padding: 20px;
+  }
+  nav, .team-container{
+    flex-direction: column;
+
+  }
+  .team-img-container{
+    grid-template-columns: 1fr;
+  }
+  .team-content{
+    padding-right: 20px;
+    padding-left: 20px;
+
+  }
+  
+}
+/* Tablets */
+@media screen and (min-width: 576px) and (max-width:960px){
+  header{
+    padding: 50px;
+  }
 }
